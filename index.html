@@ -60,7 +60,7 @@
 
         /* ----------------------- SEÇÃO BANNER/HERO ----------------------- */
         .hero {
-            /* Imagem do Robô Tech como fundo do Banner (557445956_1133196028911030_7454290949219990412_n.jpg) */
+            /* Imagem do Robô Tech como fundo do Banner */
             background-image: url('557445956_1133196028911030_7454290949219990412_n.jpg'); 
             background-size: cover;
             background-position: center;
@@ -150,6 +150,38 @@
             margin-bottom: 10px;
         }
         
+        /* ----------------------- SEÇÃO NOSSA LOJA ----------------------- */
+        .nossa-loja {
+            padding: 60px 0;
+            background-color: var(--white);
+            color: var(--dark-gray);
+            text-align: center;
+        }
+
+        .nossa-loja h2 {
+            color: var(--black);
+            text-shadow: none; /* Sem neon para este título */
+        }
+
+        .nossa-loja p {
+            margin-bottom: 30px;
+        }
+
+        .loja-imagem-container {
+            max-width: 800px; /* Largura máxima da imagem */
+            margin: 0 auto;
+            border: 3px solid var(--green-neon);
+            border-radius: 10px;
+            overflow: hidden; /* Garante que a imagem não saia da borda */
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.4); /* Sombra neon */
+        }
+
+        .loja-imagem {
+            width: 100%;
+            height: auto;
+            display: block; /* Remove espaço extra abaixo da imagem */
+        }
+        
         /* ----------------------- SEÇÃO DE CONTATO ----------------------- */
         .contato {
             padding: 60px 0;
@@ -206,6 +238,9 @@
                 bottom: 15px;
                 right: 15px;
             }
+            .loja-imagem-container {
+                width: 95%; /* Ajusta para telas menores */
+            }
         }
     </style>
 </head>
@@ -229,20 +264,22 @@
             <div class="servicos-grid">
                 <div class="servico-card">
                     <h3>Assistência Técnica Completa</h3>
-                    <p>Reparo de telas, troca de baterias, conserto de câmeras e alto-falantes.</p>
+                    <p>Reparo de telas, troca de baterias, conserto de câmeras, alto-falantes e outros.</p>
                 </div>
                 <div class="servico-card">
-                    <h3>Venda de Acessórios Premium</h3>
-                    <p>Capas, películas, carregadores turbo e fones de ouvido de alta qualidade.</p>
+                    <h3>Venda de Acessórios</h3>
+                    <p>Capas, películas, carregadores, fones de ouvido e uma ampla variedade de acessórios.</p>
                 </div>
-                <div class="servico-card">
-                    <h3>Reparo em Placa (Nível Avançado)</h3>
-                    <p>Soluções para problemas complexos como falhas de sinal, curto-circuito e placa lógica.</p>
-                </div>
-                <div class="servico-card">
-                    <h3>Dispositivos e Gadgets</h3>
-                    <p>Manutenção e venda de smartwatches, tablets e outros dispositivos tecnológicos.</p>
-                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nossa-loja" class="nossa-loja">
+        <div class="container">
+            <h2>Visite Nossa Loja Física!</h2>
+            <p>Confira um pouco do nosso espaço e venha nos fazer uma visita.</p>
+            <div class="loja-imagem-container">
+                <img src="loja_fisica.jpg" alt="Fachada e interior da loja Green Cell Conect" class="loja-imagem">
             </div>
         </div>
     </section>
