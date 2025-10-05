@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Cell Conect - Assistência Técnica e Acessórios</title>
 
+    <!-- Adiciona a fonte Poppins do Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
+    <!-- CSS EMBUTIDO (Estilo) -->
     <style>
         /* ----------------------- Variáveis de Cores ----------------------- */
         :root {
@@ -277,17 +279,21 @@
 </head>
 <body>
 
+    <!-- CABEÇALHO/LOGO E NAVEGAÇÃO -->
     <header>
         <div class="header-content container">
+            <!-- Link da logo para a página inicial (index.html) -->
             <a href="index.html">
                 <img src="557862423_1132439595653340_2909881760350286724_n.jpg" alt="Logo Green Cell Conect">
             </a>
             <nav>
+                <!-- O HREF deve ser exatamente 'catalogo.html' para funcionar -->
                 <a href="catalogo.html">Catálogo de Produtos Greencell</a>
             </nav>
         </div>
     </header>
 
+    <!-- BANNER PRINCIPAL -->
     <section class="hero">
         <div class="hero-content">
             <h1>Especialistas em Assistência Técnica</h1>
@@ -296,6 +302,7 @@
         </div>
     </section>
 
+    <!-- SEÇÃO DE SERVIÇOS (Simplificada) -->
     <section id="servicos" class="servicos">
         <div class="container">
             <h2>Nossos Principais Serviços</h2>
@@ -312,17 +319,19 @@
         </div>
     </section>
 
+    <!-- SEÇÃO DA LOJA (Ponto de Referência) -->
     <section id="nossa-loja" class="nossa-loja">
         <div class="container">
             <h2>Visite Nossa Loja Física!</h2>
             <p>Confira um pouco do nosso espaço e venha nos fazer uma visita.</p>
             <div class="loja-imagem-container">
-                <img src="imagem da loja.jpg" alt="Fachada e interior da loja Green Cell Conect" class="loja-imagem" onerror="this.onerror=null; this.src='imagem da loja.jpg';">
-                <noscript><img src="imagem da loja.jpg" alt="Fachada e interior da loja Green Cell Conect" class="loja-imagem"></noscript>
+                <!-- A tag da imagem foi simplificada para evitar duplicação -->
+                <img src="loja.jpg" alt="Fachada e interior da loja Green Cell Conect" class="loja-imagem" onerror="this.onerror=null; this.src='imagem da loja.jpg'">
             </div>
         </div>
     </section>
 
+    <!-- SEÇÃO DE CONTATO E LOCALIZAÇÃO -->
     <section id="contato" class="contato">
         <div class="container">
             <h2>Fale Conosco</h2>
@@ -334,12 +343,14 @@
         </div>
     </section>
 
+    <!-- RODAPÉ -->
     <footer>
         <div class="container">
             <p style="color: var(--dark-gray); text-align: center; font-size: 0.8em;">&copy; 2025 Green Cell Conect. Todos os direitos reservados.</p>
         </div>
     </footer>
     
+    <!-- BOTÃO WHATSAPP FLUTUANTE -->
     <a href="https://wa.me/5541920028318" class="whatsapp-button" target="_blank" aria-label="Fale Conosco pelo WhatsApp">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="whatsapp-icon">
             <path d="M22 16.92v3a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path>
@@ -350,285 +361,3 @@
 
 </body>
 </html>
-```eof
-
----
-
-## 2. Código da Página do Catálogo (`catalogo.html`)
-
-Salve este código exatamente como **`catalogo.html`** (tudo minúsculo).
-
-```html:Catálogo de Produtos Greencell:catalogo.html
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo GREEN CELL CONECT - Acessórios</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        /* Cores baseadas no tema Neon Green do site principal */
-        :root {
-            --green-neon: #00ff00; /* Verde Neon */
-            --black: #000000;
-            --dark-gray: #1a1a1a;
-            --white: #ffffff;
-            --cor-destaque: var(--black);
-        }
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--dark-gray); /* Fundo escuro para destacar o neon */
-            color: var(--white);
-        }
-        .catalogo-container {
-            max-width: 900px;
-            margin: 30px auto;
-            background-color: var(--black);
-            border-radius: 12px;
-            box-shadow: 0 0 20px rgba(0, 255, 0, 0.4); /* Sombra neon */
-            overflow: hidden;
-            border: 2px solid var(--green-neon);
-        }
-        .header-banner {
-            padding: 0;
-            text-align: center;
-            border-bottom: 5px solid var(--green-neon);
-        }
-        .header-banner img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        .catalogo-titulo {
-            text-align: center;
-            color: var(--green-neon);
-            padding: 20px 10px 10px;
-            text-shadow: 0 0 5px rgba(0, 255, 0, 0.6);
-            margin-top: 0;
-        }
-        .btn-voltar {
-            display: inline-block;
-            background-color: var(--green-neon);
-            color: var(--black);
-            padding: 8px 15px;
-            text-decoration: none;
-            font-weight: 700;
-            border-radius: 5px;
-            margin: 20px 0 0 20px;
-            transition: opacity 0.3s;
-        }
-        .btn-voltar:hover {
-            opacity: 0.8;
-        }
-        .produto-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border-bottom: 1px dashed var(--green-neon);
-            margin-bottom: 25px;
-            padding: 20px;
-            text-align: center;
-            transition: background-color 0.3s;
-        }
-        .produto-item:hover {
-            background-color: #0d0d0d;
-        }
-        .produto-item:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-        }
-        .produto-imagem {
-            flex: 0 0 100%;
-            margin-bottom: 15px;
-        }
-        .produto-imagem img {
-            max-width: 100%;
-            height: auto;
-            max-height: 200px;
-            border-radius: 8px;
-            border: 2px solid var(--green-neon);
-            object-fit: contain;
-            box-shadow: 0 0 8px rgba(0, 255, 0, 0.3);
-        }
-        .produto-detalhes {
-            flex-grow: 1;
-            text-align: left;
-            width: 100%;
-        }
-        .produto-detalhes h3 {
-            color: var(--white);
-            font-size: 1.5em;
-            margin-top: 0;
-            margin-bottom: 10px;
-            padding-bottom: 5px;
-            border-bottom: 2px solid var(--green-neon);
-        }
-        .produto-detalhes strong {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-            color: var(--green-neon);
-        }
-        .produto-detalhes p {
-            color: #ccc;
-        }
-        .contato-catalogo {
-            text-align: center;
-            padding: 20px;
-            border-top: 3px solid var(--green-neon);
-            margin-top: 20px;
-        }
-        .contato-catalogo a {
-            color: var(--green-neon);
-            text-decoration: none;
-            font-weight: 600;
-        }
-        /* Media query para desktop */
-        @media (min-width: 600px) {
-            .produto-item {
-                flex-direction: row;
-                text-align: left;
-            }
-            .produto-imagem {
-                flex: 0 0 250px;
-                margin-right: 25px;
-                margin-bottom: 0;
-            }
-        }
-    </style>
-</head>
-<body>
-
-<a href="index.html" class="btn-voltar">← Voltar para o Site Principal</a>
-
-<div class="catalogo-container">
-
-    <div class="header-banner">
-        <img src="558850548_1134522535445046_3627644506661162132_n.jpg" alt="Banner GREEN CELL CONECT">
-    </div>
-    <h2 class="catalogo-titulo">Catálogo de Acessórios & Gadgets</h2>
-
-    <div class="produto-item">
-        <div class="produto-imagem">
-            <img src="556904150_1134523852111581_2313759530266863910_n.jpg" alt="Fone de Ouvido Sem Fio H'Maston F924">
-        </div>
-        <div class="produto-detalhes">
-            <h3>1. Fone de Ouvido Sem Fio H'Maston F924</h3>
-            <strong>Produto:</strong> Fone de Ouvido Sem Fio TWS (True Wireless Stereo) com estojo.
-            <p><strong>Descrição:</strong> Modelo **F924** da H'Maston com tecnologia **Wireless V5.3**, que promete ser **mais rápido, mais estável e com menor consumo de energia**. Design elegante em branco, ideal para uso diário. Oferece uma experiência de áudio potente e sem complicações.</p>
-        </div>
-    </div>
-
-    <div class="produto-item">
-        <div class="produto-imagem">
-            <img src="557405827_1134523928778240_2739483880589106875_n.jpg" alt="Lâmpada LED RGB Music Bulb LEHMUX">
-        </div>
-        <div class="produto-detalhes">
-            <h3>2. Lâmpada LED RGB Inteligente (Music Bulb)</h3>
-            <strong>Produto:</strong> Lâmpada LED RGB com Caixa de Som Embutida (Modelo LEY-WJ-L2).
-            <p><strong>Descrição:</strong> O **Music Bulb** da Lehmox combina iluminação e entretenimento. É uma lâmpada **LED RGB** (Vermelho, Verde e Azul) com alto-falante integrado. Permite **controle remoto** para variar cores e reproduzir músicas, transformando o ambiente com luz e som.</p>
-        </div>
-    </div>
-
-    <div class="produto-item">
-        <div class="produto-imagem">
-            <img src="558326922_1134523908778242_4054130220278496371_n.jpg" alt="Headphone JBL D92">
-        </div>
-        <div class="produto-detalhes">
-            <h3>3. Headphone JBL D92 - Immersive 360º Sound</h3>
-            <strong>Produto:</strong> Headphone Wireless com design moderno.
-            <p><strong>Descrição:</strong> Fone de ouvido da JBL (Modelo D92) com som imersivo **360º**. Apresenta um design estiloso com estampa camuflada/urbana em tons de vermelho e preto. Inclui recursos como slot para **cartão TF/Micro SD**, **luzes LED** e bateria com autonomia de até **8 horas**.</p>
-        </div>
-    </div>
-
-    <div class="produto-item">
-        <div class="produto-imagem">
-            <img src="557641260_1134523832111583_5588951591893040837_n.jpg" alt="Fone de Ouvido Open-Ear A'GOLD PRO">
-        </div>
-        <div class="produto-detalhes">
-            <h3>4. Fone de Ouvido Open-Ear A'GOLD PRO FN-BT33</h3>
-            <strong>Produto:</strong> Fone de Ouvido Sem Fio de Condução Aérea.
-            <p><strong>Descrição:</strong> Fone **Open-Ear** (Ouvido Aberto) da **A'Gold Pro**, modelo **FN-BT33**, projetado para o **máximo conforto**. O design ergonômico não obstrui o canal auditivo. Possui **Sensor Touch** para controle e função **"Toque Assistente"** para comandos de voz.</p>
-        </div>
-    </div>
-
-    <div class="produto-item">
-        <div class="produto-imagem">
-            <img src="558861998_1134523795444920_5682022296848626637_n.jpg" alt="Fone de Ouvido H'Maston RS68 TWS">
-        </div>
-        <div class="produto-detalhes">
-            <h3>5. Fone de Ouvido Sem Fio H'Maston RS68</h3>
-            <strong>Produto:</strong> Fone TWS Wireless 5.4 com Estojo de Carregamento.
-            <p><strong>Descrição:</strong> Fone da H'Maston, modelo **RS68**, com conexão **Wireless 5.4**. O destaque é o **display digital** no estojo, que exibe informações de status. Oferece **Redução de Ruído**, **Equalizador** e autonomia de até **6 horas** de resistência, ideal para longos períodos de uso.</p>
-        </div>
-    </div>
-
-    <div class="produto-item">
-        <div class="produto-imagem">
-            <img src="559035627_1134522745445025_6338246623858398888_n.jpg" alt="Suporte Universal Para Celular IT.BLUE">
-        </div>
-        <div class="produto-detalhes">
-            <h3>6. Suporte Universal Para Celular IT.BLUE (Carro)</h3>
-            <strong>Produto:</strong> Suporte veicular universal com ventosa e haste flexível (Modelo LE-023).
-            <p><strong>Descrição:</strong> Suporte da marca IT.BLUE para uso em veículos, compatível com smartphones de **3.5" a 6"**. Possui base de **ventosa** para fixação firme e permite **rotação de 360º** na cabeça, garantindo o ângulo de visão perfeito para navegação GPS ou chamadas.</p>
-        </div>
-    </div>
-
-    <div class="produto-item">
-        <div class="produto-imagem">
-            <img src="557068047_1134524022111564_6173567519183516025_n.jpg" alt="Caixa de Som KARBOM">
-        </div>
-        <div class="produto-detalhes">
-            <h3>7. Caixa de Som Portátil KARBOM</h3>
-            <strong>Produto:</strong> Caixa de som portátil com iluminação ambiente.
-            <p><strong>Descrição:</strong> Caixa de som da marca **KARBOM** com design moderno, alça para transporte fácil e **iluminação LED** colorida que reage ao som. Possui botões frontais para controle de mídia, ideal para festas ou uso externo.</p>
-        </div>
-    </div>
-
-    <div class="produto-item">
-        <div class="produto-imagem">
-            <img src="557709414_1134523895444910_4928905968229130480_n.jpg" alt="Mouse Wireless RGB AG-690 LTOMEX">
-        </div>
-        <div class="produto-detalhes">
-            <h3>8. Mouse Wireless RGB LTOMEX AG-690</h3>
-            <strong>Produto:</strong> Mouse sem fio recarregável com iluminação RGB.
-            <p><strong>Descrição:</strong> Mouse óptico **Wireless** (2.4 GHz) da LtOmex, modelo **AG-690**, ideal para quem busca estilo e funcionalidade. Oferece alta precisão com até **3200 dpi**, é **recarregável** e tem um alcance de até **10 metros**. O acabamento em **RGB** lateral dá um toque gamer ao acessório.</p>
-        </div>
-    </div>
-
-    <div class="produto-item">
-        <div class="produto-imagem">
-            <img src="557599390_1134523982111568_6559116569973911116_n.jpg" alt="Caixa de Som LTOMEX AL-8281">
-        </div>
-        <div class="produto-detalhes">
-            <h3>9. Caixa de Som Portátil LTOMEX AL-8281 (10W)</h3>
-            <strong>Produto:</strong> Caixa de som portátil de alta qualidade.
-            <p><strong>Descrição:</strong> Caixa de som da LtOmex, modelo **AL-8281**, com potência de **10W**. O design é vibrante, com estampa de caveiras coloridas e detalhes em arco-íris. Possui alça e é compacta, ideal para levar a música para qualquer lugar, garantindo **"Highest Quality"** de áudio.</p>
-        </div>
-    </div>
-
-    <div class="produto-item">
-        <div class="produto-imagem">
-            <img src="558097076_1134524012111565_7834917234502037979_n.jpg" alt="Fone de Ouvido H'Maston RS20 TWS">
-        </div>
-        <div class="produto-detalhes">
-            <h3>10. Fone de Ouvido Sem Fio H'Maston RS20</h3>
-            <strong>Produto:</strong> Fone TWS com foco em qualidade de som e bateria.
-            <p><strong>Descrição:</strong> Modelo **RS20** da H'Maston, com conexão **V5.4 Sem Fio TWS**. Possui certificação ANATEL e oferece até **5 horas** de resistência de bateria. Destaca o recurso **BASS** (Redução de ruído de chamada e alto poder acústico) e a tecnologia **BPT** para posicionamento de porta e estabilidade de sinal.</p>
-        </div>
-    </div>
-
-    <div class="contato-catalogo">
-        <p>Gostou de algum produto? Chame no WhatsApp!</p>
-        <p>📱 WhatsApp: <a href="https://wa.me/5541920028318" target="_blank"> (41) 92002-8318</a></p>
-    </div>
-    
-</div>
-
-</body>
-</html>
-```eof
-
-Agora que você tem os códigos em mãos, tente novamente salvar e testar. Se o problema persistir, a solução de problemas no final da resposta anterior deve ajudar a identificar o erro.
